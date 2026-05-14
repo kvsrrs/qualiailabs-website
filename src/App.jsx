@@ -78,8 +78,12 @@ function App() {
           <nav className="hidden md:flex gap-8 text-sm">
             <a href="#home" className="hover:text-cyan-400">Home</a>
             <a href="#services" className="hover:text-cyan-400">Services</a>
-            <a href="#whatwedo" className="hover:text-cyan-400">What We Do</a>
-            <a href="#partnerships" className="hover:text-cyan-400">Partnerships</a>
+            <a href="#success" className="hover:text-cyan-400">Success Stories</a>
+            <a href="#accelerators" className="hover:text-cyan-400">AI Accelerators</a>
+            <a href="#casestudies" className="hover:text-cyan-400">Case Studies</a>
+            <a href="#genailabs" className="hover:text-cyan-400">GenAI Labs</a>
+            <a href="#platforms" className="hover:text-cyan-400">Platforms</a>
+            <a href="#academy" className="hover:text-cyan-400">QE Academy</a>
             <a href="#insights" className="hover:text-cyan-400">Insights</a>
             <a href="#careers" className="hover:text-cyan-400">Careers</a>
             <a href="#contact" className="hover:text-cyan-400">Contact</a>
@@ -215,6 +219,179 @@ function App() {
                 </p>
               </motion.div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Client Success Stories */}
+      <section
+        id="success"
+        className="py-24 px-6 bg-[#0b1020]"
+      >
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-5xl font-bold text-center mb-20">
+            Client Success Stories
+          </h2>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {[
+              "AI-powered banking QE transformation reducing release cycles by 60%",
+              "Global telecom automation platform enabling 85% testing acceleration",
+              "Healthcare digital assurance modernization for enterprise-scale compliance",
+            ].map((item, index) => (
+              <div
+                key={index}
+                className="bg-[#111827] border border-slate-700 rounded-3xl p-8"
+              >
+                <h3 className="text-2xl font-semibold mb-4 text-cyan-400">
+                  Enterprise Success
+                </h3>
+
+                <p className="text-slate-300 leading-8">
+                  {item}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* AI Accelerators */}
+      <section
+        id="accelerators"
+        className="py-24 px-6 bg-[#050816]"
+      >
+        <div className="max-w-7xl mx-auto text-center">
+          <h2 className="text-5xl font-bold mb-16">
+            AI Accelerators
+          </h2>
+
+          <div className="grid md:grid-cols-4 gap-8">
+            {[
+              "Autonomous Testing Frameworks",
+              "AI Copilot Accelerators",
+              "GenAI QE Assistants",
+              "Enterprise Quality Dashboards",
+            ].map((item, index) => (
+              <div
+                key={index}
+                className="bg-[#111827] border border-slate-700 rounded-2xl p-8"
+              >
+                <Bot size={44} className="mx-auto text-cyan-400 mb-5" />
+                <h3 className="text-xl font-semibold">
+                  {item}
+                </h3>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Case Studies */}
+      <section
+        id="casestudies"
+        className="py-24 px-6 bg-[#0b1020]"
+      >
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-5xl font-bold text-center mb-20">
+            Enterprise Case Studies
+          </h2>
+
+          <div className="space-y-8">
+            {[
+              "Modernizing enterprise QA ecosystems using AI-led automation",
+              "Reducing production defects through predictive quality analytics",
+              "Scaling cloud-native quality engineering transformation",
+            ].map((item, index) => (
+              <div
+                key={index}
+                className="bg-[#111827] border border-slate-700 rounded-3xl p-10"
+              >
+                <h3 className="text-2xl font-semibold mb-4">
+                  Case Study {index + 1}
+                </h3>
+
+                <p className="text-slate-300 leading-8">
+                  {item}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* GenAI Labs */}
+      <section
+        id="genailabs"
+        className="py-24 px-6 bg-[#050816]"
+      >
+        <div className="max-w-6xl mx-auto text-center">
+          <h2 className="text-5xl font-bold mb-10">
+            GenAI Labs
+          </h2>
+
+          <p className="text-xl text-slate-300 leading-10">
+            Innovation hub focused on Generative AI research, enterprise copilots,
+            intelligent automation frameworks, AI governance models, and autonomous
+            engineering ecosystems.
+          </p>
+        </div>
+      </section>
+
+      {/* Automation Platforms */}
+      <section
+        id="platforms"
+        className="py-24 px-6 bg-[#0b1020]"
+      >
+        <div className="max-w-7xl mx-auto text-center">
+          <h2 className="text-5xl font-bold mb-16">
+            Automation Platforms
+          </h2>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {[
+              "AI Test Automation Platform",
+              "Digital Assurance Platform",
+              "Enterprise Workflow Automation",
+            ].map((item, index) => (
+              <div
+                key={index}
+                className="bg-[#111827] border border-slate-700 rounded-3xl p-8"
+              >
+                <Workflow size={44} className="mx-auto text-cyan-400 mb-5" />
+
+                <h3 className="text-2xl font-semibold">
+                  {item}
+                </h3>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* QE Academy */}
+      <section
+        id="academy"
+        className="py-24 px-6 bg-[#050816]"
+      >
+        <div className="max-w-6xl mx-auto text-center">
+          <h2 className="text-5xl font-bold mb-10">
+            QE Academy
+          </h2>
+
+          <p className="text-xl text-slate-300 leading-10">
+            Enterprise learning ecosystem delivering AI-led Quality Engineering,
+            automation, DevOps, cloud testing, and GenAI enablement programs for
+            future-ready engineering teams.
+          </p>
+
+          <div className="mt-12">
+            <a
+              href="#contact"
+              className="bg-cyan-500 hover:bg-cyan-400 text-black px-8 py-4 rounded-2xl font-semibold"
+            >
+              Explore Training Programs
+            </a>
           </div>
         </div>
       </section>
